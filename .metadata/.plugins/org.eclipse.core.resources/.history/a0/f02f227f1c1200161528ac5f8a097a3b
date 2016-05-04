@@ -1,0 +1,17 @@
+package Zoo;
+//� A+ Computer Science  -  www.apluscompsci.com
+
+//Name -
+//Date -
+//Class -
+//Lab  -
+
+import java.awt.Color;
+import java.awt.Graphics;
+import java.awt.Image;
+import java.io.File;
+import javax.imageio.ImageIO;
+
+public class Animal extends MovingThing {
+	
+}
