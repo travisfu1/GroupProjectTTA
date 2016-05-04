@@ -1,0 +1,21 @@
+package Zoo;
+
+public class Animal {
+	String name;
+	int weight;
+	
+	public Animal(){
+		name = "unnamed animal";
+		weight = 2;
+	}
+	
+	public Animal(String n){
+		name = n;
+		weight = 2;
+	}
+	
+	public Animal(String n, int w){
+		name = n;
+		weight = w;
+	}
+}

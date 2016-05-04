@@ -18,8 +18,4 @@ public class Animal {
 		name = n;
 		weight = w;
 	}
-
-	public String toString() {
-		return "The animals name is " + name + ". Its weight is " + weight;
-	}
 }
