@@ -1,6 +1,6 @@
 package Zoo;
 
-public class Animal {
+public class Animal implements Locatable {
 	String name;
 	int weight;
 
@@ -21,5 +21,30 @@ public class Animal {
 
 	public String toString() {
 		return "The animals name is " + name + ". Its weight is " + weight;
+	}
+
+
+	@Override
+	public void setName(String nombre) {
+		// TODO Auto-generated method stub
+		name=nombre;
+	}
+
+	@Override
+	public void setWeight(int wt) {
+		weight=wt;
+		
+	}
+
+	@Override
+	public String getName() {
+		// TODO Auto-generated method stub
+		return name;
+	}
+
+	@Override
+	public int getWeight() {
+		// TODO Auto-generated method stub
+		return weight;
 	}
 }
