@@ -1,26 +1,20 @@
 package Zoo;
 
-public abstract class Animals extends Animal {
+public class Animals extends Animal {
 	private String name;
 	private int weight;
-
-	public Animals(String nombre) {
-		name = nombre;
-
+	public Animals() {
+		super();
+		// TODO Auto-generated constructor stub
+	}
+	public Animals(String n, int w) {
+		super(n, w);
+		// TODO Auto-generated constructor stub
+	}
+	public Animals(String n) {
+		super(n);
+		// TODO Auto-generated constructor stub
 	}
 
-	public Animals(int pounds) {
-		weight = pounds;
-	}
 
-	public Animals(String nombre, int pounds) {
-		name = nombre;
-		weight = pounds;
-	}
-
-	public abstract String talk();
-
-	public String toString() {
-		return name + " says " + talk();
-	}
 }
