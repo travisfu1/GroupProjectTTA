@@ -1,19 +1,17 @@
 package Zoo;
-//� A+ Computer Science  -  www.apluscompsci.com
 
-//Name -
-//Date -
-//Class -
-//Lab  -
 
 public interface Locatable {
-	public void setPos(int x, int y);
+	public void setTalk(String animalthingtheysay);
+//what does the fox say: Ringdingdingdingdigaling wa papapapapapapa AHHASHWHSHAHFHA ALKJHFHDKJAWKSH
+	
+	public void setName(String nombre);
 
-	public void setX(int x);
+	public void setWeight(int weight);
 
-	public void setY(int y);
+	public String getName();
 
-	public int getX();
-
-	public int getY();
+	public int getWeight();
+	
+	public String getTalk();
 }
