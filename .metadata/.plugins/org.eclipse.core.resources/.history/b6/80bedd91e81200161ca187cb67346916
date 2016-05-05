@@ -23,16 +23,17 @@ public class Animal implements Locatable {
 		return "The animals name is " + name + ". Its weight is " + weight;
 	}
 
+
 	@Override
 	public void setName(String nombre) {
 		// TODO Auto-generated method stub
-		name = nombre;
+		name=nombre;
 	}
 
 	@Override
 	public void setWeight(int wt) {
-		weight = wt;
-
+		weight=wt;
+		
 	}
 
 	@Override
