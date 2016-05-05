@@ -458,6 +458,7 @@ java.lang.NumberFormatException: null
 >>>>>>> Stashed changes
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 !ENTRY org.eclipse.ui 4 0 2016-05-05 09:45:49.252
 !MESSAGE Unhandled event loop exception
 !STACK 0
@@ -663,6 +664,8 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:603)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1465)
 =======
+=======
+>>>>>>> origin/master
 !ENTRY org.eclipse.core.jobs 4 2 2016-05-05 09:53:26.229
 !MESSAGE An internal error occurred during: "Periodic workspace save.".
 !STACK 0
@@ -763,4 +766,7 @@ org.xml.sax.SAXParseException; lineNumber: 2; columnNumber: 2; The markup in the
 	at org.eclipse.core.internal.resources.Workspace.run(Workspace.java:2241)
 	at org.eclipse.ltk.internal.ui.refactoring.WorkbenchRunnableAdapter.run(WorkbenchRunnableAdapter.java:87)
 	at org.eclipse.jface.operation.ModalContext$ModalContextThread.run(ModalContext.java:119)
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master
