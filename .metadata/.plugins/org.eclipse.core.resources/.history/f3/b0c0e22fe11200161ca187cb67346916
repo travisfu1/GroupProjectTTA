@@ -6,12 +6,12 @@ public class Animal {
 
 	public Animal() {
 		name = "unnamed animal";
-		weight = 3;
+		weight = 2;
 	}
 
 	public Animal(String n) {
 		name = n;
-		weight = 3;
+		weight = 2;
 	}
 
 	public Animal(String n, int w) {
