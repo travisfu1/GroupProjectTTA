@@ -13,4 +13,11 @@ public interface Locatable {
 
 	public int getWeight();
 	
+<<<<<<< HEAD
+=======
+	public String getTalk();
+	
+	public String name();
+	
+>>>>>>> origin/master
 }
