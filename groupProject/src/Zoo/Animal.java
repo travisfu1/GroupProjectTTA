@@ -3,6 +3,7 @@ package Zoo;
 public abstract class Animal implements Locatable {
 	String name;
 	int weight;
+	String message; 
 
 	public Animal() {
 		name = "unnamed animal";
@@ -18,11 +19,11 @@ public abstract class Animal implements Locatable {
 		name = n;
 		weight = w;
 	}
-
-	public String toString() {
-		return "The animals name is " + name + ". Its weight is " + weight;
+	public Animal(String n, int w, String s) {
+		name = n;
+		weight = w;
+		message = s;
 	}
-
 
 	@Override
 	public void setName(String nombre) {
@@ -46,5 +47,12 @@ public abstract class Animal implements Locatable {
 	public int getWeight() {
 		// TODO Auto-generated method stub
 		return weight;
+	}
+	
+	public abstract void setTalk( String message);
+	public abstract String getTalk(); 
+	
+	public String toString() {
+		return "The animals name is " + name + ". Its weight is " + weight + "and it says " + getTalk();
 	}
 }
