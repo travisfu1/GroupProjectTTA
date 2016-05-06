@@ -19,6 +19,10 @@ public class Animals extends Animal {
 		// TODO Auto-generated constructor stub
 	}
 	
+	public Animals(String n, int w, String s) {
+		super(n,w,s);
+		// TODO Auto-generated constructor stub
+	}
 
 	@Override
 	public void setTalk(String s) {
@@ -32,7 +36,7 @@ public class Animals extends Animal {
 	@Override
 	public String name() {
 		// TODO Auto-generated method stub
-		return name;
+		return null;
 	}
 	
 	

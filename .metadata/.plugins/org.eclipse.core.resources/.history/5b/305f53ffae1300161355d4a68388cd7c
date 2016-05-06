@@ -32,7 +32,7 @@ public class Animals extends Animal {
 	@Override
 	public String name() {
 		// TODO Auto-generated method stub
-		return name;
+		return null;
 	}
 	
 	
