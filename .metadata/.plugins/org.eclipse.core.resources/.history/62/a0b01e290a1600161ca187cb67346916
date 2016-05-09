@@ -9,16 +9,15 @@ public class Weights {
 	public Weights() {
 		setWeights("");
 	}
-
-	public Weights(String weightList) {
-		setWeights(weightList);
+	public Weights(String gradeList) {
+		setWeights(gradeList);
 	}
 
-	public void setWeights(String weightList) {
-		// Scanner key = new Scanner(weightList);
-		// int weightCount = key.nextInt();
-		// Weights = new double[weightCount];
-		// weightList.substring(weightList.indexOf("-"));
+	public void setWeights(String gradeList) {
+		// Scanner key = new Scanner(gradeList);
+		// int gradeCount = key.nextInt();
+		// Weights = new double[gradeCount];
+		// gradeList.substring(gradeList.indexOf("-"));
 		// int index = 0;
 		// while (key.hasNext()) {
 		// if (key.hasNextDouble())
@@ -28,24 +27,24 @@ public class Weights {
 		// else
 		// key.next();
 		// }
-		Scanner key = new Scanner(weightList);
-		int weightCount = key.nextInt();
-		weights = new ArrayList<Double>();
-		weightList.substring(weightList.indexOf("-"));
+		Scanner key = new Scanner(gradeList);
+		int gradeCount = key.nextInt();
+		Weights = new ArrayList<Double>();
+		gradeList.substring(gradeList.indexOf("-"));
 		int index = 0;
 		while (key.hasNext()) {
 			if (key.hasNextDouble())
-				weights.add(key.nextDouble());
+				Weights.add(key.nextDouble());
 			else if (key.hasNextInt())
-				weights.add((double) key.nextInt());
+				Weights.add((double) key.nextInt());
 			else
 				key.next();
 		}
 	}
 
-	public void setweight(int spot, double weight) {
-		// Weights[spot] = weight;
-		weights.set(spot, weight);
+	public void setGrade(int spot, double grade) {
+		// Weights[spot] = grade;
+		Weights.set(spot, grade);
 	}
 
 	public double getSum() {
@@ -55,41 +54,41 @@ public class Weights {
 		// }
 		// return sum;
 		double sum = 0.0;
-		for (int i = 0; i < weights.size(); i++) {
-			sum += weights.get(i);
+		for (int i = 0; i < Weights.size(); i++) {
+			sum += Weights.get(i);
 		}
 		return sum;
 	}
 
-	public double getLowweight() {
+	public double getLowGrade() {
 		// double low = Double.MAX_VALUE;
 		// for (int i = 0; i < Weights.length; i++) {
 		// low = Math.min(low, Weights[i]);
 		// }
 		// return low;
 		double low = Double.MAX_VALUE;
-		for (int i = 0; i < weights.size(); i++) {
-			low = Math.min(low, weights.get(i));
+		for (int i = 0; i < Weights.size(); i++) {
+			low = Math.min(low, Weights.get(i));
 		}
 		return low;
 	}
 
-	public double getHighweight() {
+	public double getHighGrade() {
 		// double high = Double.MIN_VALUE;
 		// for (int i = 0; i < Weights.length; i++) {
 		// high = Math.max(high, Weights[i]);
 		// }
 		// return high;
 		double high = Double.MIN_VALUE;
-		for (int i = 0; i < weights.size(); i++) {
-			high = Math.max(high, weights.get(i));
+		for (int i = 0; i < Weights.size(); i++) {
+			high = Math.max(high, Weights.get(i));
 		}
 		return high;
 	}
 
 	public int getNumWeights() {
 		// return Weights.length;
-		return weights.size();
+		return Weights.size();
 	}
 
 	public String toString() {
@@ -99,8 +98,8 @@ public class Weights {
 		// }
 		// return output;
 		String output = "";
-		for (int i = 0; i < weights.size(); i++) {
-			output += weights.get(i) + " ";
+		for (int i = 0; i < Weights.size(); i++) {
+			output += Weights.get(i) + " ";
 		}
 		return output;
 	}

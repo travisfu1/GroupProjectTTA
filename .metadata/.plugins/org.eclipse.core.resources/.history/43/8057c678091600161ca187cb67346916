@@ -2,11 +2,11 @@ package Zoo;
 
 public class Food {
 	private String food;
-
-	public Food() {
+	
+	public Food(){
 		setFood("");
 	}
-
+	
 	public setFood(String setFood){
 		
 	}
