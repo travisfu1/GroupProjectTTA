@@ -1,6 +1,6 @@
 package Zoo;
 
-public class Panda extends Animals {
+public class Fox {
 	private String says;
 
 	public Panda() {

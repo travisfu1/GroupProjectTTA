@@ -15,12 +15,4 @@ public class Panda extends Animals {
 		says = s;
 	}
 
-	public String getSays() {
-		return says;
-	}
-
-	public String toString() {
-		return super.toString();
-	}
-
 }

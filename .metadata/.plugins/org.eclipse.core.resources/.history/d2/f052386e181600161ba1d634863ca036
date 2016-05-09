@@ -1,13 +1,13 @@
 package Zoo;
 
-public class Panda extends Animals {
+public class Fox extends Animals{
 	private String says;
 
-	public Panda() {
+	public Fox() {
 
 	}
 
-	public Panda(int w, String n) {
+	public Fox(int w, String n) {
 		super(w, n);
 	}
 

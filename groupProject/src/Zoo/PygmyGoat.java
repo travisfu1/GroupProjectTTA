@@ -11,15 +11,11 @@ public class PygmyGoat extends Animals {
 		super(w, n);
 	}
 
-	@Override
 	public void setSays(String s) {
-		// TODO Auto-generated method stub
 		says = s;
 	}
 
-	@Override
 	public String getSays() {
-		// TODO Auto-generated method stub
 		return says;
 	}
 
