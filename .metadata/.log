@@ -2903,6 +2903,13 @@ java.lang.NumberFormatException: null
 	at org.eclipse.core.internal.resources.SaveManager.save(SaveManager.java:1163)
 	at org.eclipse.core.internal.resources.DelayedSnapshotJob.run(DelayedSnapshotJob.java:52)
 	at org.eclipse.core.internal.jobs.Worker.run(Worker.java:55)
+<<<<<<< HEAD
+
+!ENTRY org.eclipse.ui 4 0 2016-05-09 10:27:23.983
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+=======
 <<<<<<< Updated upstream
 =======
 
@@ -3040,6 +3047,7 @@ java.lang.OutOfMemoryError: Java heap space
 !MESSAGE An internal error occurred during: "Decoration Calculation".
 !STACK 0
 java.lang.OutOfMemoryError: Requested array size exceeds VM limit
+<<<<<<< HEAD
 
 !ENTRY org.eclipse.ltk.ui.refactoring 4 10000 2016-05-09 10:30:21.514
 !MESSAGE Internal Error
@@ -3165,3 +3173,6 @@ Caused by: org.apache.http.client.HttpResponseException: Internal Server Error
 	at org.eclipse.epp.internal.logging.aeri.ui.v2.AeriServer.refreshConfiguration(AeriServer.java:74)
 	at org.eclipse.epp.internal.logging.aeri.ide.Startup.initializeServerAndConfiguration(Startup.java:211)
 	... 3 more
+=======
+>>>>>>> origin/master
+>>>>>>> origin/master
