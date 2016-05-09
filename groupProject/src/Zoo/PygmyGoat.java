@@ -1,5 +1,5 @@
 package Zoo;
 
-public class PygmyGoat {
-
+public class PygmyGoat extends Animals{
+  
 }

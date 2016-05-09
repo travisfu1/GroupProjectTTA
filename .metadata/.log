@@ -3176,3 +3176,13 @@ Caused by: org.apache.http.client.HttpResponseException: Internal Server Error
 =======
 >>>>>>> origin/master
 >>>>>>> origin/master
+
+!ENTRY org.eclipse.ui 4 0 2016-05-09 10:36:58.494
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2016-05-09 10:37:03.768
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
