@@ -1,87 +1,75 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+package unit11;
+//ï¿½ A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
 //Lab  -
 
-import java.util.Arrays;
-import java.util.Scanner;
-import static java.lang.System.*;
-import static java.util.Arrays.*;
-
-public class Student
-{
+public class Student implements Comparable<Student> {
 	private String myName;
 	private Grades myGrades;
-	
-	public Student()
-	{
+
+	public Student() {
 		setName("");
 		setGrades("");
 	}
-	
-	public Student(String name, String gradeList)
-	{
 
-
-
-	}
-	
-	public void setName(String name)
-	{
-
-
-	}	
-	
-	public void setGrades(String gradeList)
-	{
-
-	
-	}
-	
-	public void setGrade(int spot, double grade)
-	{
-
-
+	public Student(String name, String gradeList) {
+		setName(name);
+		setGrades(gradeList);
 	}
 
-	public String getName()
-	{
-		return "";
-	}
-	
-	public int getNumGrades()
-	{
-		return 0;
+	public void setName(String name) {
+		myName = name;
 	}
 
-	public double getSum()
-	{
-		return 0.0;
-	}
-	
-	public double getAverage()
-	{
-		return 0.0;
+	public void setGrades(String gradeList) {
+		myGrades = new Grades(gradeList);
 	}
 
-	public double getAverageMinusLow()
-	{
-		return 0.0;
+	public void setGrade(int spot, double grade) {
+		myGrades.setGrade(spot, grade);
 	}
-	
-	public double getHighGrade()
-	{
-		return 0.0;		
+
+	public String getName() {
+		return myName;
 	}
-	
-	public double getLowGrade()
-	{
-		return 0.0;	
+
+	public int getNumGrades() {
+		return myGrades.getNumGrades();
 	}
-	
-	public String toString()
-	{
-		return "";
-	}	
+
+	public double getSum() {
+		return myGrades.getSum();
+	}
+
+	public double getAverage() {
+		return getSum() / getNumGrades();
+	}
+
+	public double getAverageMinusLow() {
+		return (getSum() - getLowGrade()) / (getNumGrades() - 1);
+	}
+
+	public double getHighGrade() {
+		return myGrades.getHighGrade();
+	}
+
+	public double getLowGrade() {
+		return myGrades.getLowGrade();
+	}
+
+	public int compareTo(Student other) {
+		return Double.compare(this.getAverage(), other.getAverage());
+	}
+
+	public boolean equals(Student other) {
+		if (this.compareTo(other) == 0)
+			return true;
+		return false;
+	}
+
+	public String toString() {
+		return myName + " = " + myGrades.toString();
+	}
 }

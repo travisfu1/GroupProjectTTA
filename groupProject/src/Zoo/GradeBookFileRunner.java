@@ -1,4 +1,5 @@
-//© A+ Computer Science  -  www.apluscompsci.com
+package unit11;
+//ï¿½ A+ Computer Science  -  www.apluscompsci.com
 //Name -
 //Date -
 //Class -
@@ -14,21 +15,21 @@ public class GradeBookFileRunner
 {
    public static void main( String args[] ) throws Exception
    {
+	   
 		out.println("Welcome to the Class Stats program!");
 		
 		Scanner file = new Scanner(new File("gradebook.dat"));
 
-
-
-
-
-
-
-
-
-
-
-
-
+		Class class1 = new Class(file.nextLine(), file.nextInt());
+		int gradeCount;
+		double grade;
+		String name;
+		while(file.hasNext()){
+			if(file.hasNextInt()){
+			}
+			else if(file.hasNext()){
+			
+			}
+		}
 	}		
 }
