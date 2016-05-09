@@ -22,8 +22,4 @@ public class PygmyGoat extends Animals {
 		// TODO Auto-generated method stub
 		return says;
 	}
-
-	public String toString() {
-		return super.toString();
-	}
 }

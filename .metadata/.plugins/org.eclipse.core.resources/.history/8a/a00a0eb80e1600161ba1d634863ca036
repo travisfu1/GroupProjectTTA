@@ -23,7 +23,7 @@ public class PygmyGoat extends Animals {
 		return says;
 	}
 
-	public String toString() {
-		return super.toString();
+	public toString(){
+		return name + weight + says;
 	}
 }

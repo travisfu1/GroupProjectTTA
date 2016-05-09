@@ -1,29 +1,24 @@
 package Zoo;
 
-public class PygmyGoat extends Animals {
-	private String says;
+<<<<<<< Updated upstream
+public class PygmyGoat extends Animals{
 
+=======
+public class PygmyGoat extends Animals {
 	public PygmyGoat() {
 
-	}
-
-	public PygmyGoat(int w, String n) {
-		super(w, n);
 	}
 
 	@Override
 	public void setSays(String s) {
 		// TODO Auto-generated method stub
-		says = s;
+
 	}
 
 	@Override
 	public String getSays() {
 		// TODO Auto-generated method stub
-		return says;
+		return null;
 	}
-
-	public String toString() {
-		return super.toString();
-	}
+>>>>>>> Stashed changes
 }

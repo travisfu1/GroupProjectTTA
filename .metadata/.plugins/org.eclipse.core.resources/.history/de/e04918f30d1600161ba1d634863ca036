@@ -11,8 +11,7 @@ public abstract class Animals {
 	}
 
 	public Animals(int w, String n) {
-		setWeight(w);
-		setName(n);
+
 	}
 
 	public void setWeight(int w) {
