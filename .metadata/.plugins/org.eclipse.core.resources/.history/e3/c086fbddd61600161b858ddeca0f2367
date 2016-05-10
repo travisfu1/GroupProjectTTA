@@ -26,22 +26,25 @@ public class exhibit {
 		Mammalweights = new ArrayList<Integer>();
 		Reptileweights = new ArrayList<Integer>();
 		Birdweights = new ArrayList<Integer>();
-
-		int dash = AnimalString.indexOf("-");
-		if (AnimalString.substring(0, dash).equals("mammal")) {
-			Mammalweights.add(key.nextInt());
+		
+		
+		int dash=AnimalString.indexOf("-");
+		if(AnimalString.substring(0, dash).equals("mammal"))
+				{
+					
+				}
+		while (key.hasNext()) {
+			if (key.hasNextInteger())
+				grades.add(key.nextDouble());
+			else if (key.hasNextInt())
+				grades.add((double) key.nextInt());
+			else
+				key.next();
 		}
-		if (AnimalString.substring(0, dash).equals("reptile")) {
-
-		}
-		if (AnimalString.substring(0, dash).equals("bird")) {
-
-		}
-
 	}
 
-	/*
-	 * public void setGrade(int spot, double grade) { // grades[spot] = grade;
-	 * grades.set(spot, grade); }
-	 */
+	public void setGrade(int spot, double grade) {
+		// grades[spot] = grade;
+		grades.set(spot, grade);
+	}
 }

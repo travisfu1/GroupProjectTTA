@@ -32,16 +32,16 @@ public class exhibit {
 			Mammalweights.add(key.nextInt());
 		}
 		if (AnimalString.substring(0, dash).equals("reptile")) {
-
+			
 		}
 		if (AnimalString.substring(0, dash).equals("bird")) {
-
-		}
-
+	
+}
+	
 	}
 
-	/*
-	 * public void setGrade(int spot, double grade) { // grades[spot] = grade;
-	 * grades.set(spot, grade); }
-	 */
+	/*public void setGrade(int spot, double grade) {
+		// grades[spot] = grade;
+		grades.set(spot, grade);
+	}*/
 }
