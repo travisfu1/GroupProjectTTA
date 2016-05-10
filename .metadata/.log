@@ -3960,6 +3960,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 !ENTRY org.eclipse.ui 4 0 2016-05-10 10:40:42.554
 !MESSAGE Unhandled event loop exception
 !STACK 0
@@ -3971,6 +3972,8 @@ java.lang.NullPointerException
 java.lang.NullPointerException
 =======
 <<<<<<< HEAD
+=======
+>>>>>>> origin/master
 !ENTRY org.eclipse.jdt.core 4 4 2016-05-10 10:41:31.143
 !MESSAGE Background Indexer Crash Recovery
 !STACK 0
@@ -4020,4 +4023,7 @@ org.eclipse.recommenders.utils.Logs$LogTraceException
 	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
 	at java.lang.Thread.run(Thread.java:745)
 >>>>>>> origin/master
+<<<<<<< HEAD
+>>>>>>> origin/master
+=======
 >>>>>>> origin/master

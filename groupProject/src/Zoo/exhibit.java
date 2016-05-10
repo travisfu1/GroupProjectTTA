@@ -40,8 +40,11 @@ public class exhibit {
 
 	}
 <<<<<<< HEAD
+<<<<<<< HEAD
 }				
 =======
+=======
+>>>>>>> origin/master
 
 	/*
 	 * public void setGrade(int spot, double grade) { // grades[spot] = grade;
