@@ -7,21 +7,21 @@ public class exhibit {
 	private ArrayList<Integer> Mammalweights;
 	private ArrayList<Integer> Reptileweights;
 	private ArrayList<Integer> Birdweights;
-	
+
 	private ArrayList<String> MammalNames;
 	private ArrayList<String> ReptileNames;
 	private ArrayList<String> BirdNames;
-	
+
 	public exhibit() {
-		setweights(0);
+		setweights("");
 	}
 
-	public exhibit(int  WeightList) {
+	public exhibit(String WeightList) {
 		setweights(WeightList);
 	}
 
-	public void setweights(int WeightList) {
-	
+	public void setweights(String WeightList) {
+
 		Scanner key = new Scanner(WeightList);
 		Mammalweights = new ArrayList<Integer>();
 		WeightList.substring(WeightList.indexOf("-"));

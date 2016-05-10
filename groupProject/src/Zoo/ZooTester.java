@@ -19,6 +19,7 @@ public class ZooTester {
 		Scanner file = new Scanner(
 				new File(
 						"/ZooProjectGitHub/GroupProjectTTA/groupProject/src/Zoo/Population"));
+
 		while (file.hasNext()) {
 			String temp = "";
 			temp = file.next();
