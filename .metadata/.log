@@ -3959,6 +3959,7 @@ java.lang.NullPointerException
 	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
 	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
 
+<<<<<<< HEAD
 !ENTRY org.eclipse.ui 4 0 2016-05-10 10:40:42.554
 !MESSAGE Unhandled event loop exception
 !STACK 0
@@ -3968,3 +3969,55 @@ java.lang.NullPointerException
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException
+=======
+<<<<<<< HEAD
+!ENTRY org.eclipse.jdt.core 4 4 2016-05-10 10:41:31.143
+!MESSAGE Background Indexer Crash Recovery
+!STACK 0
+java.lang.OutOfMemoryError: Java heap space
+	at org.eclipse.jdt.internal.compiler.util.HashtableOfObject.<init>(HashtableOfObject.java:38)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.readCategoryTable(DiskIndex.java:642)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategory(DiskIndex.java:463)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeCategories(DiskIndex.java:455)
+	at org.eclipse.jdt.internal.core.index.DiskIndex.mergeWith(DiskIndex.java:549)
+	at org.eclipse.jdt.internal.core.index.Index.save(Index.java:197)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndex(IndexManager.java:905)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.saveIndexes(IndexManager.java:947)
+	at org.eclipse.jdt.internal.core.search.indexing.IndexManager.notifyIdle(IndexManager.java:644)
+	at org.eclipse.jdt.internal.core.search.processing.JobManager.run(JobManager.java:388)
+	at java.lang.Thread.run(Thread.java:695)
+=======
+!ENTRY org.eclipse.recommenders.types.rcp 1 3 2016-05-10 10:44:34.747
+!MESSAGE Full project indexing required:
+  [+] /Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/charsets.jar
+  [+] /Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/classes.jar
+  [+] /Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jce.jar
+  [+] /Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/jsse.jar
+  [+] /Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Classes/ui.jar
+  [+] /Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/apple_provider.jar
+  [+] /Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/dnsns.jar
+  [+] /Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/localedata.jar
+  [+] /Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunjce_provider.jar
+  [+] /Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents/Home/lib/ext/sunpkcs11.jar
+  [+] /System/Library/Java/Extensions/AppleScriptEngine.jar
+  [+] /System/Library/Java/Extensions/MRJToolkit.jar
+  [+] /System/Library/Java/Extensions/dns_sd.jar
+  [+] /System/Library/Java/Extensions/j3daudio.jar
+  [+] /System/Library/Java/Extensions/j3dcore.jar
+  [+] /System/Library/Java/Extensions/j3dutils.jar
+  [+] /System/Library/Java/Extensions/jai_codec.jar
+  [+] /System/Library/Java/Extensions/jai_core.jar
+  [+] /System/Library/Java/Extensions/mlibwrapper_jai.jar
+  [+] /System/Library/Java/Extensions/vecmath.jar
+
+!STACK 0
+org.eclipse.recommenders.utils.Logs$LogTraceException
+	at org.eclipse.recommenders.utils.Logs$LogTraceException.newTrace(Logs.java:381)
+	at org.eclipse.recommenders.utils.Logs.log(Logs.java:134)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.needsRebuild(ProjectTypesIndex.java:170)
+	at org.eclipse.recommenders.internal.types.rcp.ProjectTypesIndex.startUp(ProjectTypesIndex.java:126)
+	at com.google.common.util.concurrent.AbstractIdleService$2$1.run(AbstractIdleService.java:54)
+	at com.google.common.util.concurrent.Callables$3.run(Callables.java:93)
+	at java.lang.Thread.run(Thread.java:745)
+>>>>>>> origin/master
+>>>>>>> origin/master

@@ -16,7 +16,20 @@
 1462900962644	Delete element
 1462901265503	Delete elements
 1462901279182	Rename resource 'Reptile'
+<<<<<<< HEAD
+<<<<<<< HEAD
 1462901796363	Copy file
 1462901820021	Rename resource 'gradebook.dat'
 1462901826729	Delete element
 1462901850861	Rename resource 'PopulationAnimals'
+1462902111663	Copy file
+=======
+1462902061020	Copy file
+1462902138786	Rename resource 'Population'
+1462902184341	Delete element
+>>>>>>> origin/master
+=======
+1462902061020	Copy file
+1462902138786	Rename resource 'Population'
+1462902184341	Delete element
+>>>>>>> origin/master

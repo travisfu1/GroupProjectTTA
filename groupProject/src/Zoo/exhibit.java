@@ -16,28 +16,36 @@ public class exhibit {
 		setweights("");
 	}
 
-	public exhibit(String WeightList) {
-		setweights(WeightList);
+	public exhibit(String AnimalString) {
+		setweights(AnimalString);
 	}
 
-	public void setweights(String WeightList) {
+	public void setweights(String AnimalString) {
 
-		Scanner key = new Scanner(WeightList);
+		Scanner key = new Scanner(AnimalString);
 		Mammalweights = new ArrayList<Integer>();
-		WeightList.substring(WeightList.indexOf("-"));
-		int index = 0;
-		while (key.hasNext()) {
-			if (key.hasNextInteger())
-				grades.add(key.nextDouble());
-			else if (key.hasNextInt())
-				grades.add((double) key.nextInt());
-			else
-				key.next();
-		}
-	}
+		Reptileweights = new ArrayList<Integer>();
+		Birdweights = new ArrayList<Integer>();
 
-	public void setGrade(int spot, double grade) {
-		// grades[spot] = grade;
-		grades.set(spot, grade);
+		int dash = AnimalString.indexOf("-");
+		if (AnimalString.substring(0, dash).equals("mammal")) {
+			Mammalweights.add(key.nextInt());
+		}
+		if (AnimalString.substring(0, dash).equals("reptile")) {
+
+		}
+		if (AnimalString.substring(0, dash).equals("bird")) {
+
+		}
+
 	}
+<<<<<<< HEAD
+}				
+=======
+
+	/*
+	 * public void setGrade(int spot, double grade) { // grades[spot] = grade;
+	 * grades.set(spot, grade); }
+	 */
 }
+>>>>>>> origin/master
