@@ -16,9 +16,7 @@ public class ZooTester {
 
 		out.println("Welcome to the Zoo!");
 
-		Scanner file = new Scanner(
-				new File(
-						"/ZooProjectGitHub/GroupProjectTTA/groupProject/src/Zoo/Population"));
+		Scanner file = new Scanner(new File("Population"));
 		while (file.hasNext()) {
 			String temp = "";
 			temp = file.next();

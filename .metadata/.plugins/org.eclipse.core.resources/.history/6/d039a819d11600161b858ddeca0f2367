@@ -13,24 +13,22 @@ import java.io.File;
 public class ZooTester {
 
 	public static void main(String[] args) throws Exception {
-
+		
 		out.println("Welcome to the Zoo!");
-
-		Scanner file = new Scanner(
-				new File(
-						"/ZooProjectGitHub/GroupProjectTTA/groupProject/src/Zoo/Population"));
-		while (file.hasNext()) {
-			String temp = "";
-			temp = file.next();
+		
+		Scanner file = new Scanner(new File("Population"));
+		while(file.hasNext()){
+			String temp= "";
+			temp=file.next();
 			out.println(temp);
-
-			// bird
-
-			// 12
-
-			// andy
-
-			// tweet
+		
+		//bird
+		
+		//12
+		
+		//andy
+		
+		//tweet
 		}
 	}
 
