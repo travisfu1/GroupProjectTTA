@@ -1,0 +1,18 @@
+package Zoo;
+
+public class Panda extends Animals{
+	private String says;
+
+	public Panda() {
+
+	}
+
+	public Panda(int w, String n) {
+		super(w, n);
+	}
+	
+	public void setSays(String s){
+		says =s;
+	}
+
+}

@@ -14,12 +14,12 @@ public class Panda extends Animals {
 	public void setSays(String s) {
 		says = s;
 	}
-
-	public String getSays() {
+	
+	public String getSays(){
 		return says;
 	}
-
-	public String toString() {
+	
+	public String toString(){
 		return super.toString();
 	}
 

@@ -1,0 +1,14 @@
+package Zoo;
+
+public class Panda {
+	private String says;
+
+	public Panda() {
+
+	}
+
+public PygmyGoat(int w, String n){
+	super(w,n);
+}
+
+}
