@@ -10,7 +10,7 @@ public class exhibitTester {
 		exhibit exi = new exhibit(file.nextLine());
 
 		while (file.hasNextLine()) {
-
+			
 		}
 	}
 
