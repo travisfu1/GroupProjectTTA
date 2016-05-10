@@ -3787,4 +3787,27 @@ java.lang.NullPointerException
 !MESSAGE Unhandled event loop exception
 !STACK 0
 java.lang.NullPointerException
+<<<<<<< Updated upstream
 >>>>>>> origin/master
+=======
+
+!ENTRY org.eclipse.ui 4 0 2016-05-10 10:15:37.026
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2016-05-10 10:15:46.088
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2016-05-10 10:17:56.565
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui 4 0 2016-05-10 10:18:27.147
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.NullPointerException
+>>>>>>> Stashed changes
