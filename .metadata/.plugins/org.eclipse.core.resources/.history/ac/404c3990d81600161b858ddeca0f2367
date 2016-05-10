@@ -28,7 +28,7 @@ public class exhibit {
 		Birdweights = new ArrayList<Integer>();
 
 		int dash = AnimalString.indexOf("-");
-		if (AnimalString.substring(0, dash).equals("bird")) {
+		if (AnimalString.substring(0, dash).equals("mammal")) {
 			Mammalweights.add(dash);
 			System.out.println(Mammalweights.toString());
 		}
