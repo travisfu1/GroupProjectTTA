@@ -28,9 +28,8 @@ public class exhibit {
 		Birdweights = new ArrayList<Integer>();
 
 		int dash = AnimalString.indexOf("-");
-		if (AnimalString.substring(0, dash).equals("bird")) {
-			Mammalweights.add(dash);
-			System.out.println(Mammalweights.toString());
+		if (AnimalString.substring(0, dash).equals("mammal")) {
+			Mammalweights.add(key.nextInt());
 		}
 		if (AnimalString.substring(0, dash).equals("reptile")) {
 
@@ -40,16 +39,9 @@ public class exhibit {
 		}
 
 	}
-<<<<<<< HEAD
-<<<<<<< HEAD
-}				
-=======
-=======
->>>>>>> origin/master
 
 	/*
 	 * public void setGrade(int spot, double grade) { // grades[spot] = grade;
 	 * grades.set(spot, grade); }
 	 */
 }
->>>>>>> origin/master
