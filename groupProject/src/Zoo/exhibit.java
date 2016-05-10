@@ -16,15 +16,15 @@ public class exhibit {
 		setweights("");
 	}
 
-	public exhibit(String WeightList) {
-		setweights(WeightList);
+	public exhibit(String AnimalString) {
+		setweights(AnimalString);
 	}
 
-	public void setweights(String WeightList) {
+	public void setweights(String AnimalString) {
 
-		Scanner key = new Scanner(WeightList);
+		Scanner key = new Scanner(AnimalString);
 		Mammalweights = new ArrayList<Integer>();
-		WeightList.substring(WeightList.indexOf("-"));
+		AnimalString.substring(AnimalString.indexOf("-"));
 		int index = 0;
 		while (key.hasNext()) {
 			if (key.hasNextInteger())
