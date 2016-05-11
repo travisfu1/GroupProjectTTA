@@ -1,6 +1,6 @@
 package Zoo;
 
-public class Bird extends Animals {
+	public class Bird extends Animals {
 	private String says;
 
 	public Bird() {
