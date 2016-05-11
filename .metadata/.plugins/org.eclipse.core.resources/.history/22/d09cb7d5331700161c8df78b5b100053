@@ -18,11 +18,10 @@ public class ZooTester {
 
 		Scanner file = new Scanner(new File("src/Zoo/population.dat"));
 
-		while (file.hasNextLine()) {
+		while (file.hasNext()) {
 			String temp = "";
 			temp = file.next();
 			out.println(temp);
-
 		}
 	}
 
