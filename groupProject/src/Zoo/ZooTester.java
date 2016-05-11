@@ -37,6 +37,7 @@ public class ZooTester {
 
 		String out = "";
 		do {
+<<<<<<< HEAD
 			String temp = file2.next();
 
 			// System.out.println("Family:" + temp.substring(0,
@@ -45,8 +46,32 @@ public class ZooTester {
 			// System.out.println(temp);
 			// file2.next();
 			System.out.print("Family: " + temp.substring(0, temp.indexOf("-")));
+<<<<<<< HEAD
 			System.out.println("  Type: " + file2.next() + "  Weighs: "
 					+ file2.next() + " pounds" + "  Named: " + file2.next());
+=======
+			System.out.println(
+					"  Type: " + file2.next() + "  Weighs: " + file2.next() + " pounds" + "  Named: " + file2.next());
+			String temp = file2.nextLine();
+
+			System.out
+					.println("Family:" + temp.substring(0, temp.indexOf("-")));
+			temp = temp.substring(temp.indexOf("-") + 1);
+			System.out.println(temp);
+			file2.next();
+
+			System.out
+					.println("  Type: "
+							+ temp.substring((temp.indexOf("-") + 1),
+									temp.indexOf(" ")) + "  Weighs: "
+							+ file2.next() + " pounds" + "  Named: "
+							+ file2.next());
+
+			// System.out.println(out + "\n");
+			// out = "";
+			// file2.nextLine();
+
+>>>>>>> origin/master
 		} while (file2.hasNextLine());
 
 		System.out.println("All of the Beautiful Animals in Our Lovely Zoo: "
