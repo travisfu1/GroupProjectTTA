@@ -1,13 +1,13 @@
 package Zoo;
 
-public class Bird extends Animals {
+public class Mammal extends Animals {
 	private String says;
 
-	public Bird() {
+	public Mammal() {
 
 	}
 
-	public Bird(int w, String n) {
+	public Mammal(int w, String n) {
 		super(w, n);
 	}
 
