@@ -19,7 +19,7 @@ public class ExhibitTester {
 			stuff += "mammal weight average:: " + exi.getMammalAverage() + "\n"
 					+ "reptile weight average:: " + exi.getReptileAverage()
 					+ "\n" + "bird weight average:: " + exi.getBirdAverage();
-			File poop = new File("src/Zoo/data.dat");
+			File poop = new File("groupProject/src/Zoo/data.dat");
 			if (!poop.exists()) {
 				poop.createNewFile();
 			}

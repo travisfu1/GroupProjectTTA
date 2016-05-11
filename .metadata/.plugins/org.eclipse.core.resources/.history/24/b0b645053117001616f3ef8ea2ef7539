@@ -1,0 +1,21 @@
+package Zoo;
+
+import java.io.File;
+import java.util.Scanner;
+
+public class ExhibitTester {
+	public static void main(String args[]) throws Exception {
+		Scanner file = new Scanner(new File("src/Zoo/population.dat"));
+
+		Exhibit exi = new Exhibit(file.nextLine());
+		while (file.hasNextLine())
+			exi.setweights(file.nextLine());
+
+		String stuff = "";
+		stuff += "mammal weight average:: " + exi.getMammalAverage() + "\n"
+				+ "reptile weight average:: " + exi.getReptileAverage() + "\n"
+				+ "bird weight average:: " + exi.getBirdAverage();
+		File poop = new File("GroupProjectTTA/groupProject/src/Zoo/data");
+	}
+
+}
