@@ -24,10 +24,10 @@ public class ExhibitTester {
 				poop.createNewFile();
 			}
 
-			FileWriter egg = new FileWriter(poop.getAbsoluteFile());
-			BufferedWriter bacon = new BufferedWriter(egg);
-			bacon.write(stuff);
-			bacon.close();
+			FileWriter fw = new FileWriter(poop.getAbsoluteFile());
+			BufferedWriter bw = new BufferedWriter(fw);
+			bw.write(stuff);
+			bw.close();
 
 			System.out.println("complete");
 		} catch (IOException e) {
