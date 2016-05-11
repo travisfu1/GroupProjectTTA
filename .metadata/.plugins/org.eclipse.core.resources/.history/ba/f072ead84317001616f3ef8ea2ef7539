@@ -28,8 +28,8 @@ public class ZooTester {
 
 		// Trying to print out all the animals in the zoo:
 
-		System.out.println("All of the Beautiful Animals in Our Lovely Zoo: "
-				+ "\n");
+		System.out.println("All of the Beautiful Animals in Our Lovely Zoo: " + "\n");
+
 
 		System.out.println("All of the Beautiful Animals in Our Lovely Zoo: "
 				+ "\n");
@@ -45,22 +45,14 @@ public class ZooTester {
 			// System.out.println(temp);
 			// file2.next();
 			System.out.print("Family: " + temp.substring(0, temp.indexOf("-")));
-<<<<<<< HEAD
 			System.out.println("  Type: " + file2.next() + "  Weighs: "
 					+ file2.next() + " pounds" + "  Named: " + file2.next());
-=======
-			System.out.println(
-					"  Type: " + file2.next() + "  Weighs: " + file2.next() + " pounds" + "  Named: " + file2.next());
-
-			// System.out.println(out + "\n");
-			// out = "";
-			// file2.nextLine();
-
->>>>>>> origin/master
 		} while (file2.hasNextLine());
+
 
 		System.out.println("All of the Beautiful Animals in Our Lovely Zoo: "
 				+ "\n");
+
 
 	}
 }

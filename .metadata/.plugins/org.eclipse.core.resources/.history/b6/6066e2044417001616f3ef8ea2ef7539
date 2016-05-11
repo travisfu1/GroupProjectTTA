@@ -36,4 +36,22 @@ public class Zoo {
 		return (double) (total / 3);
 	}
 
+	public String setPopulus(String popString) {
+		Scanner key = new Scanner(popString);
+		String output = "";
+		int dash = popString.indexOf("-");
+		System.out.println(popString);
+		System.out.println(dash);
+
+		while (key.hasNext()) {
+			if (key.hasNextInt()) {
+				output = "Family: "
+						+ popString.substring(0, popString.indexOf("-"))
+						+ key.nextInt();
+			}
+
+		}
+		return output;
+	}
+
 }

@@ -19,20 +19,17 @@ public class ZooTester {
 		Scanner file = new Scanner(new File("src/Zoo/data.dat"));
 
 		Zoo exi = new Zoo(file.nextLine());
-		while (file.hasNextLine())
+		while (file.hasNextLine()) {
 			exi.setZooAverage(file.nextLine());
-
+			exi.setPopulus(file.nextLine());
+		}
 		out.print("The Average Weight of All the Zoo Animals is: ");
 		out.printf("%.2f\n", exi.getZooAverage());
 		out.print("\n");
 
 		// Trying to print out all the animals in the zoo:
-
-		System.out.println("All of the Beautiful Animals in Our Lovely Zoo: "
-				+ "\n");
-
-		System.out.println("All of the Beautiful Animals in Our Lovely Zoo: "
-				+ "\n");
+<<<<<<< Updated upstream
+		System.out.println("All of the Beautiful Animals in Our Lovely Zoo: " + "\n");
 		Scanner file2 = new Scanner(new File("src/Zoo/population.dat"));
 
 		String out = "";
@@ -45,22 +42,13 @@ public class ZooTester {
 			// System.out.println(temp);
 			// file2.next();
 			System.out.print("Family: " + temp.substring(0, temp.indexOf("-")));
-<<<<<<< HEAD
-			System.out.println("  Type: " + file2.next() + "  Weighs: "
-					+ file2.next() + " pounds" + "  Named: " + file2.next());
-=======
 			System.out.println(
 					"  Type: " + file2.next() + "  Weighs: " + file2.next() + " pounds" + "  Named: " + file2.next());
-
-			// System.out.println(out + "\n");
-			// out = "";
-			// file2.nextLine();
-
->>>>>>> origin/master
 		} while (file2.hasNextLine());
-
+=======
 		System.out.println("All of the Beautiful Animals in Our Lovely Zoo: "
 				+ "\n");
+>>>>>>> Stashed changes
 
 	}
 }
