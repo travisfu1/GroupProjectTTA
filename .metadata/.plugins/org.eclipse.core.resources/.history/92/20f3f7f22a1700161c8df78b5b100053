@@ -49,4 +49,8 @@ public class Exhibit {
 		}
 
 	}
+	/*
+	 * public void setGrade(int spot, double grade) { // grades[spot] = grade;
+	 * grades.set(spot, grade); }
+	 */
 }
