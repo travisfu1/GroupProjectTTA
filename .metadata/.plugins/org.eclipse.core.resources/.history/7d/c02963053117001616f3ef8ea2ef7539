@@ -14,24 +14,26 @@ public class ExhibitTester {
 		while (file.hasNextLine())
 			exi.setweights(file.nextLine());
 
-		try {
+		
+		try{
 			String stuff = "";
 			stuff += "mammal weight average:: " + exi.getMammalAverage() + "\n"
-					+ "reptile weight average:: " + exi.getReptileAverage()
-					+ "\n" + "bird weight average:: " + exi.getBirdAverage();
-			File poop = new File("src/Zoo/data.dat");
-			if (!poop.exists()) {
+					+ "reptile weight average:: " + exi.getReptileAverage() + "\n"
+					+ "bird weight average:: " + exi.getBirdAverage();
+			File poop = new File("GroupProjectTTA/groupProject/src/Zoo/data.txt");
+			if(!poop.exists()){
 				poop.createNewFile();
 			}
-
+			
 			FileWriter fw = new FileWriter(poop.getAbsoluteFile());
 			BufferedWriter bw = new BufferedWriter(fw);
 			bw.write(stuff);
 			bw.close();
-
+			
 			System.out.println("complete");
-		} catch (IOException e) {
-			e.printStackTrace();
+		}
+		catch (IOException e){
+			 e.printStackTrace();
 		}
 
 	}
