@@ -16,7 +16,6 @@ INDEX VERSION 1.127+/Users/tegananderes/Desktop/ZooProjectGitHub/GroupProjectTTA
 2670414054.index
 1271342938.index
 2545238116.index
-706005004.index
 3266567714.index
 1384487945.index
 3657721178.index

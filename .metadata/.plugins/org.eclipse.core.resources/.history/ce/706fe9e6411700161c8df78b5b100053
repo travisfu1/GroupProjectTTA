@@ -40,7 +40,7 @@ public class ZooTester {
 			temp = temp.substring(temp.indexOf("-") + 1);
 			System.out.println(temp);
 			file2.next();
-
+			
 			System.out
 					.println("  Type: "
 							+ temp.substring((temp.indexOf("-") + 1),
