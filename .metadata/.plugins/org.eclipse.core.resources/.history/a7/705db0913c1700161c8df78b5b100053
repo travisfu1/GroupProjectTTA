@@ -34,8 +34,7 @@ public class ZooTester {
 		String out = "";
 		do {
 			String temp = file2.nextLine();
-
-			System.out.println("Family: "
+			System.out.println(" Family: "
 					+ temp.substring(0, temp.indexOf("-")) + "Type"
 					+ file2.next() + "Weighs " + file2.nextInt() + " pounds"
 					+ " Named " + file2.next());

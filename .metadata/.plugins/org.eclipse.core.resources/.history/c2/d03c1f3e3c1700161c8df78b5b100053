@@ -34,14 +34,12 @@ public class ZooTester {
 		String out = "";
 		do {
 			String temp = file2.nextLine();
-
-			System.out.println("Family: "
-					+ temp.substring(0, temp.indexOf("-")) + "Type"
-					+ file2.next() + "Weighs " + file2.nextInt() + " pounds"
+			System.out.println(" Family: " + temp.substring(0, temp.indexOf("-")) 
+					+ "Type"+ file2.next() + "Weighs " + file2.nextInt() + " pounds"
 					+ " Named " + file2.next());
-
-			// System.out.println(out + "\n");
-			// out = "";
+			
+			//System.out.println(out + "\n");
+		//	out = "";
 			file2.nextLine();
 
 		} while (file2.hasNextLine());
