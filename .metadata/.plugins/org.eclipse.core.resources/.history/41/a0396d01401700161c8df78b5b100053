@@ -40,14 +40,8 @@ public class ZooTester {
 			temp = temp.substring(temp.indexOf("-") + 1);
 			System.out.println(temp);
 			file2.next();
-			System.out.println(temp.substring((temp.indexOf("-") + 1),
-					temp.indexOf(file2.nextInt())));
-			System.out
-					.println("  Type: "
-							+ temp.substring((temp.indexOf("-") + 1),
-									temp.indexOf(" ")) + "  Weighs: "
-							+ file2.next() + " pounds" + "  Named: "
-							+ file2.next());
+			System.out.println("  Type: " + file2.next() + "  Weighs: "
+					+ file2.next() + " pounds" + "  Named: " + file2.next());
 
 			// System.out.println(out + "\n");
 			// out = "";
