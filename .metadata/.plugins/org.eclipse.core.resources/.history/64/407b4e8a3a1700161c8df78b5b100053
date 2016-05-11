@@ -24,24 +24,22 @@ public class ZooTester {
 
 		out.print("The Average Weight of All the Zoo Animals is: ");
 		out.printf("%.2f\n", exi.getZooAverage());
-		out.print("\n");
 
 		// Trying to print out all the animals in the zoo:
-		System.out.println("All of the Beautiful Animals in Our Lovely Zoo: "
-				+ "\n");
+		System.out.println("All of the Beautiful Animals in Our Lovely Zoo: ");
 		Scanner file2 = new Scanner(new File("src/Zoo/population.dat"));
 
 		String out = "";
 		do {
 			String temp = file2.nextLine();
+			System.out.println(temp);
 			out += "Family: " + temp.substring(0, temp.indexOf("-")) + " "
 					+ "  Type " + file2.next() + "  Weighs " + file2.next()
 					+ " pounds " + "  Named " + file2.next();
-			System.out.println(out + "\n");
+			System.out.println(out);
 			out = "";
-			file2.nextLine();
-
-		} while (file2.hasNextLine());
+		}while (file2.hasNextLine());
+		
 
 	}
 }
