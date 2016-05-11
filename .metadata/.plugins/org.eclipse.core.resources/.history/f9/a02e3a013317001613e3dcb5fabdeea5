@@ -1,0 +1,39 @@
+package Zoo;
+
+import java.io.BufferedWriter;
+import java.io.File;
+import java.io.FileWriter;
+import java.io.IOException;
+import java.util.Scanner;
+
+public class ExhibitTester {
+	public static void main(String args[]) throws Exception {
+		Scanner file = new Scanner(new File("src/Zoo/population.dat"));
+
+		Exhibit exi = new Exhibit(file.nextLine());
+		while (file.hasNextLine())
+			exi.setweights(file.nextLine());
+
+		try {
+			String stuff = "";
+			stuff += "mammal weight average:: " + exi.getMammalAverage() + "\n"
+					+ "reptile weight average:: " + exi.getReptileAverage()
+					+ "\n" + "bird weight average:: " + exi.getBirdAverage();
+			File poop = new File("src/Zoo/data.dat");
+			if (!poop.exists()) {
+				poop.createNewFile();
+			}
+
+			FileWriter fw = new FileWriter(poop.getAbsoluteFile());
+			BufferedWriter bw = new BufferedWriter(fw);
+			bw.write(stuff);
+			bw.close();
+
+			System.out.println("complete");
+		} catch (IOException e) {
+			e.printStackTrace();
+		}
+
+	}
+
+}
