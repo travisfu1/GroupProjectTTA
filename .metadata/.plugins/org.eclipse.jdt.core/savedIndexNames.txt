@@ -13,6 +13,14 @@ INDEX VERSION 1.127+/Users/lambocar10/Desktop/GroupProjectTTA/.metadata/.plugins
 1124887105.index
 3712507179.index
 1833648217.index
+<<<<<<< HEAD
+3321539481.index
+363152344.index
+2670414054.index
+1271342938.index
+2545238116.index
+=======
+>>>>>>> origin/master
 3266567714.index
 2720140819.index
 2545238116.index
