@@ -1,0 +1,93 @@
+package Zoo;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Exhibit {
+	private ArrayList<Integer> Mammalweights;
+	private ArrayList<Integer> Reptileweights;
+	private ArrayList<Integer> Birdweights;
+
+	private ArrayList<String> MammalNames;
+	private ArrayList<String> ReptileNames;
+	private ArrayList<String> BirdNames;
+
+	public Exhibit() {
+		setweights("");
+	}
+
+	public Exhibit(String AnimalString) {
+		Mammalweights = new ArrayList<Integer>();
+		Reptileweights = new ArrayList<Integer>();
+		Birdweights = new ArrayList<Integer>();
+		setweights(AnimalString);
+	}
+
+	public void setweights(String AnimalString) {
+
+		Scanner key = new Scanner(AnimalString);
+
+		int dash = AnimalString.indexOf("-");
+		System.out.println(AnimalString);
+		System.out.println(dash);
+
+		while (key.hasNext()) {
+			if (key.hasNextInt() && AnimalString.substring(0, dash).equals("mammal")) {
+				Mammalweights.add(key.nextInt());
+				System.out.println(Mammalweights.toString());
+			} else if (key.hasNextInt() && AnimalString.substring(0, dash).equals("reptile")) {
+				Reptileweights.add(key.nextInt());
+				System.out.println(Reptileweights.toString());
+			} else if (key.hasNextInt() && AnimalString.substring(0, dash).equals("bird")) {
+				Birdweights.add(key.nextInt());
+				System.out.println(Birdweights.toString());
+			} else
+				key.next();
+		}
+
+	}
+
+	public double getMammalAverage() {
+
+		int mammalSum = 0;
+		double mammalAvg = 0;
+
+		for (int i = 0; i < Mammalweights.size(); i++) {
+			mammalSum = mammalSum + Mammalweights.get(i);
+		}
+		mammalAvg = (double) mammalSum / Mammalweights.size();
+
+		return mammalAvg;
+	}
+
+	public double getReptileAverage() {
+
+		int ReptileSum = 0;
+		double ReptileAvg = 0;
+
+		for (int i = 0; i < Reptileweights.size(); i++) {
+			ReptileSum = ReptileSum + Reptileweights.get(i);
+		}
+		ReptileAvg = (double) ReptileSum / Reptileweights.size();
+
+		return ReptileAvg;
+
+	}
+
+	public double getBirdAverage() {
+
+		int BirdSum = 0;
+		double BirdAvg = 0;
+
+		for (int i = 0; i < Birdweights.size(); i++) {
+			BirdSum = BirdSum + Birdweights.get(i);
+		}
+		BirdAvg = (double) BirdSum / Birdweights.size();
+
+		return BirdAvg;
+	}
+	/*
+	 * public void setGrade(int spot, double grade) { // grades[spot] = grade;
+	 * grades.set(spot, grade); }
+	 */
+}

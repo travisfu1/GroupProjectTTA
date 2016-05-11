@@ -16,13 +16,14 @@ public class ZooTester {
 
 		out.println("Welcome to the Zoo!");
 
-		Scanner file = new Scanner(new File("src/Zoo/data.dat"));
+		Scanner file = new Scanner(new File("src/Zoo/population.dat"));
 
-		Zoo exi = new Zoo(file.nextLine());
-		while (file.hasNextLine())
-			exi.setZooAverage(file.nextLine());
+		while (file.hasNextLine()) {
+			String temp = "";
+			temp = file.next();
+			out.println(temp);
 
-		out.println("The Average Weight of All the Zoo Animals is: "
-				+ exi.getZooAverage());
+		}
 	}
+
 }
