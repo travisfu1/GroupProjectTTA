@@ -28,18 +28,16 @@ public class exhibit {
 		Birdweights = new ArrayList<Integer>();
 
 		int dash = AnimalString.indexOf("-");
-		if (AnimalString.substring(0, dash).equals("bird")) {
+		if (AnimalString.substring(0, dash).equals("mammal")) {
 			Mammalweights.add(key.nextInt());
-			System.out.println(Mammalweights.toString());
 		}
 		if (AnimalString.substring(0, dash).equals("reptile")) {
-			Reptileweights.add(key.nextInt());
-			System.out.println(Reptileweights.toString());
+
 		}
 		if (AnimalString.substring(0, dash).equals("bird")) {
-			Birdweights.add(key.nextInt());
-			System.out.println(Birdweights.toString());
+
 		}
+
 	}
 
 	/*
