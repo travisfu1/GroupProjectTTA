@@ -43,6 +43,7 @@ public class ZooTester {
 			System.out.print("Family: " + temp.substring(0, temp.indexOf("-")));
 			System.out.println(
 					"  Type: " + file2.next() + "  Weighs: " + file2.next() + " pounds" + "  Named: " + file2.next());
+=======
 			String temp = file2.nextLine();
 
 			System.out
@@ -57,6 +58,7 @@ public class ZooTester {
 									temp.indexOf(" ")) + "  Weighs: "
 							+ file2.next() + " pounds" + "  Named: "
 							+ file2.next());
+>>>>>>> origin/master
 
 			// System.out.println(out + "\n");
 			// out = "";
