@@ -1,41 +1,21 @@
-<<<<<<< Updated upstream
-INDEX VERSION 1.127+/Users/tegananderes/Desktop/ZooProjectGitHub/GroupProjectTTA/.metadata/.plugins/org.eclipse.jdt.core
-2499292115.index
-3712507179.index
-97863960.index
-1124887105.index
-156905802.index
-11171121.index
-2225827089.index
-1819685514.index
-950241290.index
-2720140819.index
-3302703152.index
-=======
 INDEX VERSION 1.127+/Users/lambocar10/Desktop/GroupProjectTTA/.metadata/.plugins/org.eclipse.jdt.core
-2670414054.index
 1384487945.index
+2670414054.index
 1271342938.index
 1819685514.index
 363152344.index
 3321539481.index
 2225827089.index
-3657721178.index
 156905802.index
+3657721178.index
 97863960.index
 11171121.index
 1124887105.index
 3712507179.index
->>>>>>> Stashed changes
 1833648217.index
 3266567714.index
-<<<<<<< Updated upstream
-1384487945.index
-3657721178.index
-=======
 2720140819.index
 2545238116.index
 950241290.index
 3302703152.index
 2499292115.index
->>>>>>> Stashed changes
