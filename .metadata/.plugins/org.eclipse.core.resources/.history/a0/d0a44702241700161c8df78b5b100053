@@ -24,6 +24,14 @@ public class ZooTester {
 			String temp = "";
 			temp = file.next();
 			out.println(temp);
+
+			// bird
+
+			// 12
+
+			// andy
+
+			// tweet
 		}
 	}
 

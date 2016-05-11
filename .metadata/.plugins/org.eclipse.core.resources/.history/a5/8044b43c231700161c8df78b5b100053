@@ -3,7 +3,7 @@ package Zoo;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Exhibit {
+public class exhibit {
 	private ArrayList<Integer> Mammalweights;
 	private ArrayList<Integer> Reptileweights;
 	private ArrayList<Integer> Birdweights;
@@ -12,11 +12,11 @@ public class Exhibit {
 	private ArrayList<String> ReptileNames;
 	private ArrayList<String> BirdNames;
 
-	public Exhibit() {
+	public exhibit() {
 		setweights("");
 	}
 
-	public Exhibit(String AnimalString) {
+	public exhibit(String AnimalString) {
 		setweights(AnimalString);
 	}
 
@@ -31,10 +31,12 @@ public class Exhibit {
 		if (AnimalString.substring(0, dash).equals("bird")) {
 			Mammalweights.add(key.nextInt());
 			System.out.println(Mammalweights.toString());
-		} else if (AnimalString.substring(0, dash).equals("reptile")) {
+		}
+		if (AnimalString.substring(0, dash).equals("reptile")) {
 			Reptileweights.add(key.nextInt());
 			System.out.println(Reptileweights.toString());
-		} else if (AnimalString.substring(0, dash).equals("bird")) {
+		}
+		if (AnimalString.substring(0, dash).equals("bird")) {
 			Birdweights.add(key.nextInt());
 			System.out.println(Birdweights.toString());
 		}

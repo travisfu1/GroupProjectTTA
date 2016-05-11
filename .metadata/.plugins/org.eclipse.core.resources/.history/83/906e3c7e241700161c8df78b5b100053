@@ -8,6 +8,7 @@ public class ExhibitTester {
 		Scanner file = new Scanner(new File("src/Zoo/population.dat"));
 
 		Exhibit exi = new Exhibit(file.nextLine());
+		file.nextLine();
 		while (file.hasNextLine())
 			exi.setweights(file.nextLine());
 

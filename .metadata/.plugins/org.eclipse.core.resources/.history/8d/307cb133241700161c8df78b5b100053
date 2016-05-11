@@ -31,10 +31,12 @@ public class Exhibit {
 		if (AnimalString.substring(0, dash).equals("bird")) {
 			Mammalweights.add(key.nextInt());
 			System.out.println(Mammalweights.toString());
-		} else if (AnimalString.substring(0, dash).equals("reptile")) {
+		}
+		if (AnimalString.substring(0, dash).equals("reptile")) {
 			Reptileweights.add(key.nextInt());
 			System.out.println(Reptileweights.toString());
-		} else if (AnimalString.substring(0, dash).equals("bird")) {
+		}
+		if (AnimalString.substring(0, dash).equals("bird")) {
 			Birdweights.add(key.nextInt());
 			System.out.println(Birdweights.toString());
 		}
