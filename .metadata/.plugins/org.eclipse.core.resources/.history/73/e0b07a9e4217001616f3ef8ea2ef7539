@@ -35,8 +35,7 @@ public class Zoo {
 		}
 		return (double) (total / 3);
 	}
-
-	public String setPopulus(String popString) {
+	public String setPopulus(String popString){
 		Scanner key = new Scanner(popString);
 		String output = "";
 		int dash = popString.indexOf("-");
@@ -44,14 +43,13 @@ public class Zoo {
 		System.out.println(dash);
 
 		while (key.hasNext()) {
-			if (key.hasNextInt()) {
-				output = "Family: "
-						+ popString.substring(0, popString.indexOf("-"))
+			if(key.hasNextInt()){
+				output = "Family: " + popString.substring(0, popString.indexOf("-"))
 						+ key.nextInt();
 			}
-
+			 
 		}
-		return output;
+		return output; 
 	}
 
 }
