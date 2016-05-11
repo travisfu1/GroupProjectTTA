@@ -33,6 +33,6 @@ public class Zoo {
 		for (int i = 0; i < AverageZooWeights.size(); i++) {
 			total += AverageZooWeights.get(i);
 		}
-		return (double) (total / 3);
+		return total;
 	}
 }
