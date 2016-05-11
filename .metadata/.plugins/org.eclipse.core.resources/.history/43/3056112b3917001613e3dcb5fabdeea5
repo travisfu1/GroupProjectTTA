@@ -1,0 +1,50 @@
+package Zoo;
+
+import java.util.ArrayList;
+import java.util.Scanner;
+
+public class Zoo implements Name {
+	private ArrayList<Double> AverageZooWeights;
+
+	public Zoo() {
+		setZooAverage("");
+	}
+
+	public Zoo(String AverageString) {
+		AverageZooWeights = new ArrayList<Double>();
+		setZooAverage(AverageString);
+	}
+
+	public void setZooAverage(String AverageString) {
+		Scanner key = new Scanner(AverageString);
+
+		while (key.hasNext()) {
+			if (key.hasNextDouble()) {
+				AverageZooWeights.add(key.nextDouble());
+				System.out.println(AverageZooWeights.toString());
+			} else
+				key.next();
+		}
+
+	}
+
+	public double getZooAverage() {
+		double total = 0;
+		for (int i = 0; i < AverageZooWeights.size(); i++) {
+			total += AverageZooWeights.get(i);
+		}
+		return (double) (total / 3);
+	}
+
+	@Override
+	public void setSay(String n) {
+		// TODO Auto-generated method stub
+
+	}
+
+	@Override
+	public String getSay() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+}
