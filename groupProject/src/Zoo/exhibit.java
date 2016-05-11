@@ -32,16 +32,13 @@ public class Exhibit implements Heaviest {
 		System.out.println(dash);
 
 		while (key.hasNext()) {
-			if (key.hasNextInt()
-					&& AnimalString.substring(0, dash).equals("mammal")) {
+			if (key.hasNextInt() && AnimalString.substring(0, dash).equals("mammal")) {
 				Mammalweights.add(key.nextInt());
 				System.out.println(Mammalweights.toString());
-			} else if (key.hasNextInt()
-					&& AnimalString.substring(0, dash).equals("reptile")) {
+			} else if (key.hasNextInt() && AnimalString.substring(0, dash).equals("reptile")) {
 				Reptileweights.add(key.nextInt());
 				System.out.println(Reptileweights.toString());
-			} else if (key.hasNextInt()
-					&& AnimalString.substring(0, dash).equals("bird")) {
+			} else if (key.hasNextInt() && AnimalString.substring(0, dash).equals("bird")) {
 				Birdweights.add(key.nextInt());
 				System.out.println(Birdweights.toString());
 			} else
