@@ -48,6 +48,21 @@ public class Exhibit {
 				key.next();
 		}
 
+		/*
+		 * while (key.hasNext()) { if (AnimalString.substring(0,
+		 * dash).equals("bird")) { Mammalweights.add(3);
+		 * System.out.println(Mammalweights.toString());
+		 * 
+		 * } }
+		 * 
+		 * if (AnimalString.substring(0, dash).equals("reptile")) {
+		 * Reptileweights.add(key.nextInt());
+		 * System.out.println(Reptileweights.toString()); } if
+		 * (AnimalString.substring(0, dash).equals("bird")) {
+		 * Birdweights.add(key.nextInt());
+		 * System.out.println(Birdweights.toString()); }
+		 */
+
 	}
 	/*
 	 * public void setGrade(int spot, double grade) { // grades[spot] = grade;
