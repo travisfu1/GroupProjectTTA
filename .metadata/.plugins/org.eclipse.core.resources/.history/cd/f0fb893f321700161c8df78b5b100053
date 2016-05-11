@@ -17,15 +17,15 @@ public class Exhibit {
 	}
 
 	public Exhibit(String AnimalString) {
-		Mammalweights = new ArrayList<Integer>();
-		Reptileweights = new ArrayList<Integer>();
-		Birdweights = new ArrayList<Integer>();
 		setweights(AnimalString);
 	}
 
 	public void setweights(String AnimalString) {
 
 		Scanner key = new Scanner(AnimalString);
+		Mammalweights = new ArrayList<Integer>();
+		Reptileweights = new ArrayList<Integer>();
+		Birdweights = new ArrayList<Integer>();
 
 		int dash = AnimalString.indexOf("-");
 		System.out.println(AnimalString);
