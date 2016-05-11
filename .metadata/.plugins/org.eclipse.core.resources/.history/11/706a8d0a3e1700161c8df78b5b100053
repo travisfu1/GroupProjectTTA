@@ -37,15 +37,12 @@ public class ZooTester {
 
 			System.out
 					.println("Family:" + temp.substring(0, temp.indexOf("-")));
-			temp = temp.substring(temp.indexOf("-") + 1);
-			System.out.println(temp);
-			file2.next();
-			System.out.println("  Type: " + file2.next() + "  Weighs: "
-					+ file2.next() + " pounds" + "  Named: " + file2.next());
+			// + file2.next() + "  Type: " + file2.next() + "  Weighs: "
+			// + file2.next() + " pounds" + "  Named: " + file2.next());
 
 			// System.out.println(out + "\n");
 			// out = "";
-			// file2.nextLine();
+			file2.nextLine();
 
 		} while (file2.hasNextLine());
 

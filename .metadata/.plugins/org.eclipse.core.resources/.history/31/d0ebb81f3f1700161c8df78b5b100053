@@ -33,12 +33,11 @@ public class ZooTester {
 
 		String out = "";
 		do {
-			String temp = file2.nextLine();
+			String temp = file2.next();
 
 			System.out
 					.println("Family:" + temp.substring(0, temp.indexOf("-")));
-			temp = temp.substring(temp.indexOf("-") + 1);
-			System.out.println(temp);
+			// temp = temp.substring(temp.indexOf("-"));
 			file2.next();
 			System.out.println("  Type: " + file2.next() + "  Weighs: "
 					+ file2.next() + " pounds" + "  Named: " + file2.next());
