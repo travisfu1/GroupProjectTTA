@@ -22,7 +22,7 @@ public class ZooTester {
 		while (file.hasNextLine())
 			exi.setZooAverage(file.nextLine());
 
-		out.println("The Average Weight of All the Zoo Animals is: "
-				+ exi.getZooAverage());
+		}
 	}
-}
+
+

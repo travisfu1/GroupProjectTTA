@@ -30,7 +30,7 @@ public class Zoo {
 
 	public double getZooAverage() {
 		double total = 0;
-		for (int i = 0; i < AverageZooWeights.size(); i++) {
+		for (int i = 0; i <= AverageZooWeights.size(); i++) {
 			total += AverageZooWeights.get(i);
 		}
 		return total;
