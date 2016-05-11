@@ -3,7 +3,7 @@ package Zoo;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Exhibit implements Heaviest {
+public class Exhibit {
 	private ArrayList<Integer> Mammalweights;
 	private ArrayList<Integer> Reptileweights;
 	private ArrayList<Integer> Birdweights;
@@ -88,22 +88,6 @@ public class Exhibit implements Heaviest {
 		BirdAvg = (double) BirdSum / Birdweights.size();
 
 		return BirdAvg;
-	}
-
-	@Override
-	public String getBiggest() {
-		String biggest = "";
-		if (getMammalAverage() > getBirdAverage()
-				&& getMammalAverage() > getReptileAverage()) {
-			biggest = "Mammal";
-		} else if (getBirdAverage() > getMammalAverage()
-				&& getBirdAverage() > getReptileAverage()) {
-			biggest = "Bird";
-		} else if (getReptileAverage() > getMammalAverage()
-				&& getReptileAverage() > getBirdAverage()) {
-			biggest = "Reptile";
-		}
-		return biggest;
 	}
 
 	/*

@@ -35,5 +35,4 @@ public class Zoo {
 		}
 		return (double) (total / 3);
 	}
-
 }
