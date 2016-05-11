@@ -30,23 +30,26 @@ public class Exhibit {
 		int dash = AnimalString.indexOf("-");
 		System.out.println(AnimalString);
 		System.out.println(dash);
-
+		System.out.println(key.nextInt());
+		
 		while (key.hasNext()) {
-			if (AnimalString.substring(0, dash).equals("bird")) {
-				Mammalweights.add(3);
-				System.out.println(Mammalweights.toString());
-			}
+		if (AnimalString.substring(0, dash).equals("bird")) {
+			Mammalweights.add(key.nextInt());
+			System.out.println(Mammalweights.toString());
 		}
-		/*
-		 * if (AnimalString.substring(0, dash).equals("reptile")) {
-		 * Reptileweights.add(key.nextInt());
-		 * System.out.println(Reptileweights.toString()); } if
-		 * (AnimalString.substring(0, dash).equals("bird")) {
-		 * Birdweights.add(key.nextInt());
-		 * System.out.println(Birdweights.toString()); }
-		 */
-
+		if (AnimalString.substring(0, dash).equals("reptile")) {
+			Reptileweights.add(key.nextInt());
+			System.out.println(Reptileweights.toString());
+		}
+		if (AnimalString.substring(0, dash).equals("bird")) {
+			Birdweights.add(key.nextInt());
+			System.out.println(Birdweights.toString());
+		}
+		else
+			key.next();
 	}
+	}
+
 	/*
 	 * public void setGrade(int spot, double grade) { // grades[spot] = grade;
 	 * grades.set(spot, grade); }

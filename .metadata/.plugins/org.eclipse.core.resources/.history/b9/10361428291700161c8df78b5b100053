@@ -32,8 +32,9 @@ public class Exhibit {
 		System.out.println(dash);
 
 		while (key.hasNext()) {
-			if (AnimalString.substring(0, dash).equals("bird")) {
-				Mammalweights.add(3);
+			if (AnimalString.substring(0, dash).equals("bird")
+					&& key.hasNextInt()) {
+				Mammalweights.add(key.nextInt());
 				System.out.println(Mammalweights.toString());
 			}
 		}
